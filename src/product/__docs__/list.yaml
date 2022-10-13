@@ -1,0 +1,6 @@
+/products:
+  get:
+    description: Get all products!
+    responses:
+      200:
+        description: Returns a list of all products
