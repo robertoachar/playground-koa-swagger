@@ -3,16 +3,8 @@
   "version": "1.0.0",
   "description": "A playground for Koa and Swagger",
   "author": "Roberto Achar <robertoachar@gmail.com>",
-  "homepage": "https://github.com/robertoachar/playground-koa-swagger#readme",
-  "keywords": [
-    "node"
-  ],
-  "main": "main.js",
-  "files": [
-    "src"
-  ],
   "scripts": {
-    "start": "node main.js",
+    "start": "nodemon main.js",
     "lint": "jest --config jest-eslint.config.js",
     "lint:watch": "jest --config jest-eslint.config.js --watch",
     "jest": "jest --config jest-test.config.js",
@@ -35,15 +27,16 @@
       "test:coverage": "Run lint + tests with code coverage"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/robertoachar/playground-koa-swagger.git"
-  },
-  "bugs": {
-    "url": "https://github.com/robertoachar/playground-koa-swagger/issues"
-  },
   "dependencies": {
-    "esm": "3.2.25"
+    "@koa/cors": "4.0.0",
+    "dotenv": "16.0.3",
+    "esm": "3.2.25",
+    "koa": "2.13.4",
+    "koa-bodyparser": "4.3.0",
+    "koa-helmet": "6.1.0",
+    "koa-logger": "3.2.1",
+    "koa-router": "12.0.0",
+    "winston": "3.8.2"
   },
   "devDependencies": {
     "@babel/core": "7.19.3",
@@ -59,6 +52,7 @@
     "jest": "29.1.2",
     "jest-runner-eslint": "1.1.0",
     "jest-watch-typeahead": "2.2.0",
+    "nodemon": "2.0.20",
     "prettier": "2.7.1"
   },
   "license": "MIT"
